@@ -6,4 +6,4 @@ typedef struct {
 } book_t;
 
 void add_book(book_t* library[], const book_t*, int);
-int search_book_title(book_t library[], char*);
+int search_book_by_keyword(book_t* library[], char*, int);
