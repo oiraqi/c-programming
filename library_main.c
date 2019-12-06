@@ -18,4 +18,6 @@ int main(void) {
         printf("Found at %d\n", findex + 1);
     else
         printf("Not found\n");
+    
+    printf("Half of total number of pages is: %f\n", (float)compute_total_number_pages(library, index) / 2);
 }

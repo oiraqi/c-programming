@@ -7,3 +7,4 @@ typedef struct {
 
 void add_book(book_t* library[], const book_t*, int);
 int search_book_by_keyword(book_t* library[], char*, int);
+int compute_total_number_pages(book_t* library[], int);

@@ -25,3 +25,11 @@ int search_book_by_keyword(book_t* library[], char *keyword, int index) {
             return i;
     return -1;
 }
+
+int compute_total_number_pages(book_t* library[], int index) {
+    int i, total = 0;
+    for (i=0; i<index; i++)
+        total += library[i]->np;
+
+    return total;
+}
