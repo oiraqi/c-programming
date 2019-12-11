@@ -33,7 +33,7 @@ int main(void) {
     nbf = search_all_books_by_keyword(library, "girl", index, found_indexes);
 
     /**
-     * Here no need to check whether nbf is different from 0
+     * There is no need to check whether nbf is different from 0
      * The loop will be naturally skipped if nbf is equal to 0
      */
     for (i = 0; i < nbf; i++)
