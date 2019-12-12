@@ -8,7 +8,7 @@ void add_book(book_t* library[], book_t *bookp, int index){
 
 int contains_keyword(char *title, const char *keyword) {
     /* printf("Comparing %s against %s\n", title, keyword); */
-    
+
     if (strlen(title) < strlen(keyword))
         return 0;
     if (strlen(title) == strlen(keyword))
@@ -28,6 +28,7 @@ int search_first_book_by_keyword(book_t* library[], const char *keyword, int ind
     for (i = 0; i < index; i++)
         if (contains_keyword(library[i]->title, keyword))
             return i;
+    
     return -1;
 }
 
