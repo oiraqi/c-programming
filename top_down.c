@@ -2,12 +2,14 @@
 #include "prime_fib.h"
 
 int main(void) {
-	int n, i;
+	int n, i, check;
 	long sum = 0;
 	scanf("%d", &n);
 
+    
 	for(i=1; i<=n; i++) {
-		if(is_prime(i)) {
+        check = is_prime(i);
+		if(check) {
 			sum += fib(i);
 		}
 	}

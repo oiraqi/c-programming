@@ -1,10 +1,12 @@
 int is_prime(int p) {
-	int i;
+	int i, prime = 1;
 	for(i=2; i<p; i++){
-		if(!(p%i))
-			return 0;
+		if(!(p%i)){
+			prime = 0;
+			break;
+		}
 	}
-	return 1;
+	return prime;
 }
 
 long fib(int p) {
