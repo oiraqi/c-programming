@@ -9,7 +9,7 @@ int is_monotonic(int n) {
             return 0; /* You're not monotonic. Stop here! */
     }
     /**
-     * If you reached this point, you merit to be called monotonic!
+     * If you reached this point, you deserve to be called monotonic!
      */
     return 1;
 }
@@ -22,7 +22,7 @@ int is_regular(int n) {
         base = n%10;
     }
     /**
-     * If you reached this point, you merit to be called regular!
+     * If you reached this point, you deserve to be called regular!
      */
     return 1;
 }
