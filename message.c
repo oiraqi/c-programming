@@ -12,8 +12,8 @@ int main(void) {
     char *message;
     
     printf("%s\n", (char*)encoded_message);
-
-	/**
+    
+    /**
      * Let's say it again!
      */
     message = (char*)malloc(N * sizeof(int));
