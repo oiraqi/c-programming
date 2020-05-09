@@ -1,13 +1,14 @@
-#define SIZE 3
-void fill(float grades[][SIZE]) {
-	int i, j;
-	for(i=0; i < SIZE; i++)
-		for(j=0; j < SIZE; j++)
-			grades[i][j] = i * j;
-}
+#include <stdio.h>
+#include <string.h>
 
-int main(void) {
-	float grades[SIZE][SIZE];
-	fill(grades);
-	return 0;
+void fill(int array[], int n) {
+	int i;
+	for(i=0; i < 10; i++)
+		array[i] = n;
+}
+ 
+int main(void){ 
+ int array[10];
+ fill(array, 7);
+ return 0;
 }
