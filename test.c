@@ -1,14 +1,10 @@
 #include <stdio.h>
-#include <string.h>
-
-void fill(int array[], int n) {
-	int i;
-	for(i=0; i < 10; i++)
-		array[i] = n;
+void twice(float x) {
+	x *= 2; 
 }
- 
-int main(void){ 
- int array[10];
- fill(array, 7);
- return 0;
+int main(void) {
+	float x = 2;
+	twice(++x);
+	printf("%f", x);
+	return 0;
 }

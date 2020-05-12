@@ -36,8 +36,7 @@ void generate(int n, int numbers[]) {
     FILE *fin = fopen("code.tpl", "r");
     FILE *fout = fopen("code.c", "w");
 
-    while (fgets(line, 100, fin))
-    {
+    while (fgets(line, 100, fin)) {
         i = strcspn(line, "?");
         if (i == strlen(line)) { /* line does not contain ? */
             fputs(line, fout);
@@ -50,8 +49,7 @@ void generate(int n, int numbers[]) {
         else if (occurence == 2) { /* Second ? */
             fprintf(fout, "{");
             fprintf(fout, "%d", numbers[0]);
-            for (i = 1; i < n; i++)
-            {
+            for (i = 1; i < n; i++) {
                 fprintf(fout, ", %d", numbers[i]);
             }
             fprintf(fout, "};\n");
